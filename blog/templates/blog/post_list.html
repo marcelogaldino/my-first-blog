@@ -4,8 +4,17 @@
 	<title>Teste</title>
 </head>
 <body>
-<h1>My first website with Django and Pythonanywhere.com</h1>
-<p>This is a text test!!</p>
-<br><p>by Marcelog</p>
-</body>
-</html>
+
+<div>
+<h1><a href= "/"> My first website with Django and Pythonanywhere.com</a></h1>
+</div>
+
+{% for post in posts %}
+
+<div>
+<p> published: {{ post.published_date }} </p>
+<h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p> <!--linebreaksbr está passando o texto do post por um filtro, convertendo quebras de linha em parágrafos.-->
+</div>
+
+{% endfor %}
