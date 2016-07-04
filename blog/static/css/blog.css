@@ -9,7 +9,7 @@ body {
 
 .page-header {
 	text-align: center;
-    background-color: #006BFF;
+    background-color: #006BFF ;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -55,3 +55,16 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+.copy-left { 
+	display: inline-block; 
+	text-align: center;
+	right; margin: 0px; 
+	-moz-transform: 
+	scaleX(-1); 
+	-o-transform: scaleX(-1); 
+	-webkit-transform: scaleX(-1); 
+	transform: scaleX(-1); 
+	filter: FlipH; 
+	-ms-filter: "FlipH"
+} 
